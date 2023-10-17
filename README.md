@@ -9,12 +9,15 @@ I intend on creating a web-based security awareness game designed to educate and
 
 The web-based platform will feature a collection of mini-games, each addressing a specific cybersecurity topic or scenario. The mini games are designed to be engaging, informative, and suitable for players of all skill levels. They cover a range of cybersecurity concepts.
 
-## Risk Plan
-#### Technical Challenges:
+## Allocated supervisor 
+Bogdan Ghita 
+
+## Risk plan
+#### Technical challenges:
 -	Programming Errors: A few coding mistakes or bugs could affect the game's functionality.
 -	Compatibility Issues: There might be problems with game elements not working as intended on certain devices or browsers.
 
-#### Content Development:
+#### Content development:
 -	Content Creation Delays: There might be delays in developing the game content, the series of mini games.
 
 #### User experience:

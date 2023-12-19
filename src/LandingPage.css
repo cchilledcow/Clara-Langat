@@ -1,0 +1,29 @@
+/* LandingPage.css */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #8B008B;
+}

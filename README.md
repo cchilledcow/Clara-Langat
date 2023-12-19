@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+## Project title 
+Security-awareness-game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project vision 
+I intend on creating a web-based security awareness game designed to educate and engage:
+-	General Users: Anyone interested in enhancing their cybersecurity awareness and skills.
+-	Employees within Organizations: A valuable training tool for organizations to improve employee cybersecurity knowledge.
+-	Students: An engaging and interactive way for students to learn about cybersecurity concepts and best practices.
 
-## Available Scripts
+The web-based platform will feature a collection of mini-games, each addressing a specific cybersecurity topic or scenario. The mini games are designed to be engaging, informative, and suitable for players of all skill levels. They cover a range of cybersecurity concepts.
 
-In the project directory, you can run:
+## Allocated supervisor 
+Bogdan Ghita 
 
-### `npm start`
+## Risk plan
+#### Technical challenges:
+-	Programming Errors: A few coding mistakes or bugs could affect the game's functionality.
+-	Compatibility Issues: There might be problems with game elements not working as intended on certain devices or browsers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Content development:
+-	Content Creation Delays: There might be delays in developing the game content, the series of mini games.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### User experience:
+-	Feedback Implementation: There might be challenges in incorporating player feedback and improvements.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To manage these risks effectively, I will follow these strategies:
+-	Develop a clear project plan with well-defined milestones and deadlines.
+-	Regularly back up the project work and documentation.
+-	Continuously test the game with potential users to gather feedback and address usability issues.
+-	Seek guidance and feedback from project supervisors and professors.
+-	Create a testing plan to identify and resolve compatibility issues.

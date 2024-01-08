@@ -1,0 +1,50 @@
+/* PhishingEmail.css */
+
+.phishing-email {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #1a237e; /* Dark Blue Background */
+  padding: 30px;
+  border: 1px solid #0d47a1; /* Border Color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #fff; /* Text Color */
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.email-from {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.email-date {
+  color: #ccc;
+}
+
+.email-body {
+  margin-bottom: 30px;
+}
+
+.phishing-button {
+  background-color:var(--myDarkBlue); /* Red Button Color */
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.phishing-button:hover {
+  background-color: #c0392b;
+}
+
+.phishing {
+  background-color: var(--gradient); /* Darker Red for Phishing Background */
+}

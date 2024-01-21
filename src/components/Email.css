@@ -1,0 +1,124 @@
+.email-container {
+  width: 800px;
+  max-width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+    
+  }
+
+  .grey-box {
+    background-color: #d7e2e4; /* Grey box background color */
+    padding: 20px; /* Padding for the grey box */
+    font-family: 'Arial', sans-serif; /* Set the desired font family for the content */
+    height: 100%; /* Make the grey box fill the available height */
+  }
+  
+  
+  .email-header {
+    display: flex;
+    flex-direction: column; /* Display header items in a column */
+  align-items: flex-start; /* Align items to the start of the column */
+    margin-bottom: 15px;
+  }
+  
+  .email-subject {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .sender-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sender-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #007BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-placeholder {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .sender-details {
+    margin-left: 10px;
+  }
+  
+  .sender-name {
+    font-weight: bold;
+  }
+  
+  .sender-email {
+    color: #666;
+  }
+  
+  .email-content {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .email-content a {
+    font-size: 17px;
+    color: #007BFF; /* Set the color for links */
+    text-decoration: underline; /* Add underline for links */
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  .attachment-link {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  .to-me {
+    margin-top: 5px;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    right: 4;
+    border: 1px solid #ddd;
+    z-index: 1;
+    font-size: 12px; /* Adjusted font size */
+    padding: 10px; /* Increased padding for a bigger box */
+  }
+  
+  .dropdown-content p {
+    padding: 5px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .to-me::after {
+    margin-left: 5px;
+  }

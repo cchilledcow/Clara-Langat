@@ -1,0 +1,20 @@
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 90px;
+    
+  }
+  
+  .phishing-button,
+  .genuine-button {
+    background-color: #dfe5ec;
+    color: #070707;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }

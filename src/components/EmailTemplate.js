@@ -3,7 +3,7 @@ import EmailNavBar from './EmailNavBar';
 import './Email.css';
 
 const EmailTemplate = ({ emailData }) => {
-  const { Subject, Content, Links, Sender } = emailData;
+  const { Subject, Content, Sender } = emailData;
 
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -35,9 +35,9 @@ const EmailTemplate = ({ emailData }) => {
   return (
     <div>
     <EmailNavBar />
-    <div className="email-container">
-      <div className="email-header">
-        <div className="email-subject">{Subject}</div>
+    <div className="email-container1">
+      <div className="email-header1">
+        <div className="email-subject1">{Subject}</div>
         <div className="sender-info">
           <div className="sender-avatar">
             <div className="avatar-placeholder">{Sender.avatar}</div>

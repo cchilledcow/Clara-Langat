@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import EmailTemplate from './EmailTemplate';
 import mockEmails from '../api/MockEmails';
+import './EmailContainer.css'
 
 const EmailContainer = () => {
   const [currentEmailIndex, setCurrentEmailIndex] = useState(0);
@@ -12,12 +13,27 @@ const EmailContainer = () => {
     }
   };
 
+  const handleIsPhishing = () => {
+    // Handle logic for "Is it phishing" button
+    console.log('Is it phishing clicked');
+  };
+
+  const handleIsGenuine = () => {
+    // Handle logic for "Is it genuine" button
+    console.log('Is it genuine clicked');
+  };
+
   return (
     <div>
       <EmailTemplate emailData={currentEmailData} />
-      <button onClick={handleNextEmail} disabled={currentEmailIndex === mockEmails.length - 1}>
-        Next Email
-      </button>
+      <div className="bottom-buttons">
+        <button className="phishing-button" onClick={handleIsPhishing}>
+          Phishing
+        </button>
+        <button className="genuine-button" onClick={handleIsGenuine}>
+          Genuine
+        </button>
+      </div>
     </div>
   );
 };

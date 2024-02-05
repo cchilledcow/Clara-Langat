@@ -8,6 +8,7 @@ import QuizIntermediate from "./components/QuizIntermediate";
 import QuizAdvanced from "./components/QuizAdvanced";
 import QuizPage from "./components/QuizPage";
 import EmailContainer from "./components/EmailContainer";
+import GmailStatic from "./components/GmailStatic";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/quizadvanced" element={<QuizAdvanced />}></Route>
             <Route path="/quizpage" element={<QuizPage />}></Route>
             <Route path="/emailcontainer" element={<EmailContainer />}></Route>
+            <Route path="/gmail" element={<GmailStatic />}></Route>
           
             {/* Add routes here */}
           

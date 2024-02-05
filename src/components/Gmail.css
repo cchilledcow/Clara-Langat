@@ -1,0 +1,160 @@
+/* Gmail.css */
+
+.email-container {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 10px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;    
+  }
+  
+  .macbook-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    gap: 10px;
+
+  }
+  
+  .red, .yellow, .green {
+    font-size: 14px;
+  }
+  
+  .red {
+    color: #ff5f5f;
+  }
+  
+  .yellow {
+    color: #ffd700;
+  }
+  
+  .green {
+    color: #4caf50;
+  }
+  
+  .email-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; /* Creates space between subject and actions */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .email-subject {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1;
+  }
+  
+  .email-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* Push email actions to the right */
+  }
+  
+  .email-actions > svg {
+    cursor: pointer;
+  }
+  
+  .email-details {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .sender-info {
+    flex-grow: 1;
+    gap: 5px;
+  }
+  
+  .sender-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sender-email {
+    color: #777;
+  }
+  
+  .email-time {
+    display: flex;
+    align-items: center;
+  }
+  
+  .time {
+    color: #777;
+    margin-right: 10px;
+  }
+
+  .actions  { 
+    display: flex;  
+    gap: 10px;
+  }
+  
+  .actions > svg {
+    margin-left: 10px;
+    cursor: pointer;
+
+  }
+  
+  .email-to-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  
+  .email-to-me > svg {
+    margin-right: 5px;
+  }
+  
+  .email-content-box {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .email-content {
+    color: #333;
+  }
+
+  .email-attachments {
+    margin-top: 15px;
+  }
+  
+  .attachment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .attachment > span {
+    margin-left: 8px;
+  }
+
+  .email-navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .email-navigation button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  

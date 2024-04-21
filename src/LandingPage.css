@@ -1,29 +1,50 @@
-/* LandingPage.css */
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+/* landing.css */
+.landing-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px; /* Add padding to space out the content and GIF */
 }
 
+.content {
+  flex: 1;
+}
+
+.gif {
+  width: 30%; /* Adjust the width of the GIF container as needed */
+}
+
+.left-content {
+  margin-right: 200px; /* Add margin to space out the content and GIF */
+}
+
+h1,
 p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-size: 1.1rem;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
 li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0e008b;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-a:hover {
-    color: #8B008B;
-}

@@ -9,7 +9,7 @@ body {
 }
 
 .app-container {
-  max-width: 800px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: #8B008B;
+  color: #d40e0e;
 }
 
 

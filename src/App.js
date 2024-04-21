@@ -4,11 +4,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import "./App.css"; // Import the styles
 import Quiz from "./components/Quiz";
-import QuizIntermediate from "./components/QuizIntermediate";
-import QuizAdvanced from "./components/QuizAdvanced";
-import QuizPage from "./components/QuizPage";
-import EmailContainer from "./components/EmailContainer";
-import GmailStatic from "./components/GmailStatic";
+import Gmail from "./components/Gmail";
+import EmailTestGround from "./components/EmailTestGround";
+import PhishingEducation from "./components/PhishingEducation";
+import MainPage from "./components/Mainpage";
+import EmailNotification from "./components/EmailNotification";
 
 function App() {
   return (
@@ -19,11 +19,12 @@ function App() {
             <Route index element={<LandingPage />} />
             <Route path="/landing" element={<LandingPage />}></Route>
             <Route path="/quiz" element={<Quiz />}></Route>
-            <Route path="/quizintermediate" element={<QuizIntermediate />}></Route>
-            <Route path="/quizadvanced" element={<QuizAdvanced />}></Route>
-            <Route path="/quizpage" element={<QuizPage />}></Route>
-            <Route path="/emailcontainer" element={<EmailContainer />}></Route>
-            <Route path="/gmail" element={<GmailStatic />}></Route>
+            <Route path="/gmail" element={<Gmail />}></Route>
+            <Route path="/testground" element={<EmailTestGround />}></Route>
+            <Route path="/phishingeducation" element={<PhishingEducation />}></Route>
+            <Route path="/mainpage" element={<MainPage />}></Route>
+            <Route path="/emailnotification" element={<EmailNotification />}></Route>
+          
           
             {/* Add routes here */}
           

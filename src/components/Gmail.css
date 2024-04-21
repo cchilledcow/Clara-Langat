@@ -12,6 +12,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;    
   }
+
+.email-feedback-container{
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+
+}
   
   .macbook-icons {
     display: flex;
@@ -88,6 +94,9 @@
   .email-time {
     display: flex;
     align-items: center;
+    width: 50%;
+    white-space: nowrap;
+    justify-content: space-between;
   }
   
   .time {
@@ -98,6 +107,7 @@
   .actions  { 
     display: flex;  
     gap: 10px;
+    margin-left: 620px; /* Push email actions to the right */
   }
   
   .actions > svg {
@@ -121,24 +131,40 @@
     background-color: #eee;
     padding: 10px;
     border-radius: 5px;
+
   }
   
   .email-content {
+    text-align: left;
     color: #333;
+    margin: 1; /* Remove excessive spacing between paragraphs */
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    white-space: pre-line;
   }
 
   .email-attachments {
     margin-top: 15px;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    
   }
   
   .attachment {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
+
   }
   
   .attachment > span {
     margin-left: 8px;
+    
+  }
+  .attachment > a {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
   }
 
   .email-navigation {
@@ -156,5 +182,59 @@
     font-size: 14px;
     border-radius: 4px;
   }
-  
-  
+
+  .phishing-or-genuine-buttons{
+    display: flex;
+    justify-content: space-around; /* Add space around buttons */
+    margin-top: 10px; /* Adjust the top margin to create space */
+
+  }
+  .email-link {
+    color: blue; 
+    text-decoration: underline; 
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+
+}
+
+.feedback-section {
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 20px;
+  white-space: pre-line;
+  max-width: 1000px;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.phishing-button,
+.genuine-button {
+  background-color: #dfe5ec;
+  color: #070707;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.feedback-message{
+  text-align: centre;
+  color: #fefff9;
+  margin-top: 30px;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+  white-space: pre-line;
+}
+.next-email-button{
+  margin-top: 20px;
+}

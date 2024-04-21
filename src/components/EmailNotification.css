@@ -1,0 +1,100 @@
+/* EmailNotification.css */
+.email-notification {
+    background-color: #d4ebf2;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .email-container1 {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 10px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;    
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px; /* Increase font size */
+  }
+  
+  .top-right {
+    text-align: right;
+  }
+  
+  .title {
+    margin: 0;
+    text-align: left;
+  }
+  
+  .separator {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  .email-container1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .email-icon1 {
+    font-size: 60px; /* Adjusted size */
+    margin-right: 10px;
+  }
+  
+  .content-box1 {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    flex-grow: 1;
+  }
+  
+  .email-title1 {
+    margin: 0;
+  }
+  
+  .email-message1 {
+    margin-top: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .open-btn,
+  .cancel-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .open-btn:hover,
+  .cancel-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

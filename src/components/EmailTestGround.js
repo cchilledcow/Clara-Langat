@@ -27,7 +27,7 @@ const EmailTestGround = () => {
       setShowResult(false); // Reset showResult state when moving to the next email
     } else {
       // The user has reached the last email, show the results
-      setShowResult(true);
+      setShowResult(checkAllQuestionsAnswered());
     }
   };
 
@@ -55,9 +55,8 @@ const EmailTestGround = () => {
     } else {
       setFeedback('Oops! You marked this email as phishing, but it is genuine. No suspicious links or other phishing tactics were detected.');
     }
-    setShowResult(true); // Show result after submitting answer
   }
-  };
+};
   
   const handleGenuine = () => {
     if (!answerSubmitted) {
@@ -93,10 +92,20 @@ const EmailTestGround = () => {
           break;
         default:
           setFeedback('Oops! You marked this email as genuine, but it is phishing. The email contains suspicious links and other phishing tactics, such as a sense of urgency or poor grammar.');
+          }
+        }
+      }
+    };
+
+
+  // Function to check if all questions have been answered
+  const checkAllQuestionsAnswered = () => {
+    for (let i = 0; i < emaildata.length; i++) {
+      if (!emaildata[i].hasOwnProperty('isPhishing')) {
+        return false;
       }
     }
-    setShowResult(true); // Show result after submitting answer
-  }
+    return true;
   };
 
   const handleLinkMouseEnter = (link) => {
@@ -210,7 +219,7 @@ const EmailTestGround = () => {
             }
           >
             <h1 style={result > 3.5 ? { color: "#4cceac" } : { color: "#db4f4a" }}>
-              {score}/7
+              {score}/{emaildata.length}
             </h1>
           </div>
           <button onClick={reset}>Try again</button>
@@ -219,7 +228,7 @@ const EmailTestGround = () => {
       {/* End of questions message */}
       {currentEmailIndex === emaildata.length - 1 && (
         <div className="end-of-questions-message">
-          <p>This is the last email. Answer to see your results.</p>
+          <p>This is the last email, answer then click on next email to see your results.</p>
         </div>
       )}
     </div>

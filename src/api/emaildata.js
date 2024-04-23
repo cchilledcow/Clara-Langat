@@ -68,19 +68,19 @@ const emailData =
 
       { text: "Hi John,\n\nI hope you and your family had a wonderful time at the picnic last weekend. I've attached some photos from the event that I thought you might enjoy.\n\nLet me know if you have any trouble accessing the photos.\n\n"},
 
-      { text: "https://drive.exampleschool.edu/picnic-photos.zip", link: "https://drive.exampleschool.edu/picnic-photos.zip" },
+      { text: "https://drive.Stmaryschool.edu/picnic-photos.zip", link: "https://drive.Stmaryschool.edu/picnic-photos.zip" },
 
       { text: "\n\nBest regards,\nMatilda" },
     ],
     attachments: [
       {
         "name": "Picnic Photos.zip",
-        "url": "https://drive.exampleschool.edu/picnic-photos.zip"
+        "url": "https://drive.Stmaryschool.edu/picnic-photos.zip"
       }
     ],
     isPhishing: "no",
     links: [
-      "https://drive.exampleschool.edu/picnic-photos.zip"
+      "https://drive.Stmaryschool.edu/picnic-photos.zip"
     ]
   },
   {
@@ -91,14 +91,14 @@ const emailData =
       
       {text: "Dear Jane,\n\nOur records indicate that your bank account information needs to be updated. To prevent any disruption to your services, please click the link below to verify your account details:\n\n"},
 
-      { text: "example-bank.com/verify", link: "example-bank.com/verify" },
+      { text: "https://drive.llyodsbank.com/verify", link: "https://drive.llyodsbank.com/verify" },
 
       { text: "\n\nThank you for your prompt attention to this matter.\n\nSincerely,\nExample Bank Support" },
     ],
     attachments: [],
     isPhishing: "yes",
     links: [
-      "example-bank.com/verify"
+      "https://drive.llyodsbank.com/verify"
     ]
   },
   {

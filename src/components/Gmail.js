@@ -22,10 +22,10 @@ const Gmail = () => {
         messages: [
           {
             role: "system",
-            content: "You are a cybersecurity expert tasked with generating educational materials to help people identify phishing emails. Your task is to create either a genuine or phishing email based on the provided information. Generate a subject, sender and receiver details. Do not specify whether the email is genuine or phishing. Do not use placeholders that give out what email you generating such as [suspicious link] instead generate links that lead no where. You are free to come up with any scenario e.g. a friend sending an email with a photo attached, an email from  a school sending an excel sheet, advertisements from companies, the list is endless "
+            content: "You are a cybersecurity expert tasked with generating educational materials to help people identify phishing emails. Your task is to create either a genuine or phishing email based on the provided information. If generating a genuine email, ensure the following: The sender's email address and domain are legitimate and well-known (e.g., company@example.com, friend@email.com) The subject line is relevant and not suspicious (e.g., 'Meeting Reminder', 'Photo from Vacation') The email content is professionally written and does not contain urgent calls to action or requests for sensitive information Any links or attachments are from trusted sources and do not raise suspicionIf generating a phishing email, you can include common phishing tactics such as: Spoofed or suspicious sender email addresses Urgent or threatening language in the subject line or content Requests for sensitive information (e.g., passwords, credit card details)Suspicious links or attachments that could lead to malicious websites or downloads Generate a subject, sender and receiver details, and the email content. Do not specify whether the email is genuine or phishing. Do not use placeholders that give out what email you generating; instead, generate links that lead nowhere. You are free to come up with any scenario."
           }
         ],
-        model: "gpt-3.5-turbo",
+        model: "gpt-4",
         max_tokens: 300,
         temperature: 1,
         top_p: 1,
@@ -77,14 +77,14 @@ const Gmail = () => {
           {
             role: "system",
             content:
-              "You are providing phishing awareness training. Analyse the email and the user's judgement of whether it is genuine or a phishing attempt. Give feedback explaining: If their judgement was correct or not. The key elements that make the email legitimate or a likely phishing attempt. Any other insights to help them better identify phishing emails in the future. Use clear, easy-to-understand language. The feedback should educate rather than criticize, helping someone with no prior training to recognize the characteristics of genuine versus phishing emails.",
+            "You are providing phishing awareness training. Analyze the email and the user's judgment of whether it is genuine or a phishing attempt. Give concise feedback explaining: If their judgment was correct or not.The key elements that make the email legitimate or a likely phishing attempt (e.g., sender's email address, subject line, content, links, or attachments). Any other insights to help them better identify phishing emails in the future.Use clear, easy-to-understand language. Keep the feedback focused and actionable, aiming to educate rather than criticize."
           },
           {
             role: "user",
             content: `Email Content:\n${generatedEmail.content}\n\nUser Selection: ${isPhishing ? "Phishing" : "Genuine"}`,
           },
         ],
-        model: "gpt-3.5-turbo",
+        model: "gpt-4",
         max_tokens: 300,
         temperature: 1,
         top_p: 1,
